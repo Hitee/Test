@@ -1,0 +1,26 @@
+[  
+    
+    {  
+        "name":"Mark",
+ 	
+        "city":"Oslo",
+         "cars": [
+        {
+            "id": "4",
+            "email": "eve.holt@reqres.in",
+            
+        },
+        {
+            "id": "5",
+            "email": "charles.morris@reqres.in",
+           
+        },
+        {
+            "id": "6",
+            "email": "tracey.ramos@reqres.in",
+          
+        }
+   	 ],
+        "job":"Doctor"
+    }
+]

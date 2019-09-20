@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item value="true" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\Hitee Sachdeva\Downloads\EmployeeBDD"/>
+			<item value="C:\Users\Hitee Sachdeva\Downloads\HotelBooking_161181"/>
+			<item value="D:\sts"/>
+			<item value=""/>
+			<item value="D:\New folder (2)\workspace\JPACRUDProjectCOPY"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="C:\Users\Hitee Sachdeva\Downloads\EmployeeBDD (2).rar"/>
+			<item value=""/>
+			<item value="C:\Users\Hitee Sachdeva\Downloads\HotelBooking_161181.zip"/>
+			<item value="C:\Users\Hitee Sachdeva\Downloads\EmployeeManagementSystem_MPT_STYLE (2).zip"/>
+			<item value="C:\Users\Hitee Sachdeva\Downloads\FlightInformationSystem_spring.zip"/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,68 @@
+import org.openqa.selenium.WebDriver;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+
+import java.sql.Driver;
+import java.util.concurrent.TimeUnit;
+import java.util.regex.Pattern;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Capabilities;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+
+
+
+//import EmpoyeeBean.EmployeePageBean;
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
+import java.net.URL;
+
+
+
+//import EmpoyeeBean.EmployeePageBean;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+
+import java.util.concurrent.TimeUnit;
+import java.util.regex.Pattern;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+
+//import EmpoyeeBean.EmployeePageBean;
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+public class webDriver {
+	
+	WebDriver driver = new ChromeDriver();
+	//driver = new ChromeDriver();
+	 public static void main(String[] args) {
+		 WebDriver driver = new ChromeDriver();
+		 System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
+		 driver.get("http://google.com");
+		 //String textbox = "//*[@id="tsf"]/div[2]/div[1]/div[1]/div/div[2]/input";
+		driver.findElement(By.className("jojo"));
+		
+	}
+}

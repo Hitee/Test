@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.cg.hotelbooking.controller&apos; to &apos;hitee/src&apos;&#x0D;&#x0A;- Original project: &apos;HotelBooking_161181&apos;&#x0D;&#x0A;- Destination element: &apos;hitee/src&apos;&#x0D;&#x0A;- Original element: &apos;HotelBooking_161181/src/com.cg.hotelbooking.controller&apos;" description="Copy package" destination="=hitee/src" element1="/src&lt;com.cg.hotelbooking.controller" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1542543629093" version="1.0"/>
+</session>

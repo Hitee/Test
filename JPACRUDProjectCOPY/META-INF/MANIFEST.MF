@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: JPACRUDProjectCOPY
+Bundle-SymbolicName: JPACRUDProjectCOPY
+Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: JPACRUDProjectCOPY.jar,
+  Hitee Sachdeva/DRIVERS/mysql-connector-java-5.1.39-bin.jar,
+  Hitee Sachdeva/DRIVERS/ojdbc6_g.jar,
+  Hitee Sachdeva/DRIVERS/persistence-api-1.0.jar
+Export-Package: com.capgemini.jpa.dao,
+ com.capgemini.jpa.entity,
+ com.capgemini.jpa.exception,
+ com.capgemini.jpa.presentation,
+ com.capgemini.jpa.service,
+ com.capgemini.jpa.utility

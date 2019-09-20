@@ -1,0 +1,10 @@
+import org.openqa.selenium.WebDriver;
+
+//import EmpoyeeBean.EmployeePageBean;
+
+public class webDriver {
+
+	private WebDriver driver;
+	//private EmployeePageBean obj;
+
+}

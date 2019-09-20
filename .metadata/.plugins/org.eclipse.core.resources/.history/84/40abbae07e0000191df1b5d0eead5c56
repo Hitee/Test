@@ -1,0 +1,22 @@
+package com.cg;
+
+public class A {
+
+public static void main(String[] args) {
+	 int n = 1;
+     outer :
+     while (n < 6) {
+         for (int i = 0; i < 10; i++) {
+             if (i % 2 == 0) {
+                 System.out.print(i + " ");
+                 continue;
+             } else {
+                 System.out.print(n + " ");
+                // break outer;
+             }
+         }
+         n++;
+     }
+ }
+}
+

@@ -1,0 +1,122 @@
+package com.cg;
+
+import java.util.Iterator;
+/*
+import com.qc.ClassFactory;
+import com.qc.ITDConnection;
+import com.qc.ITestLabFolder;
+import com.qc.ITestSetFactory;
+import com.qc.ITestSetTreeManager;
+import com.qc.ITestSetFolder;
+import com.qc.IList;
+import com.qc.ITSTest;
+import com.qc.ITestSet;
+import com.qc.ITestFactory;
+import com4j.*;
+import com4j.stdole.*;
+import com4j.tlbimp.*;
+import com4j.tlbimp.def.*;
+import com4j.tlbimp.driver.*;
+import com4j.util.*;
+import com4j.COM4J;
+import java.util.*;
+import com.qc.IRun;
+import com.qc.IRunFactory;
+*/
+
+public class Qc_Connect {
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        String url="http://abc/qcbin/";
+        String domain="abc";
+        String project="xyz";
+        String username="132222";
+        String password="Xyz";
+        String strTestLabPath = "Root\\Test\\"; 
+        String strTestSetName = "TestQC";   
+
+
+                try{
+            ITDConnection itd=ClassFactory.createTDConnection();
+            itd.initConnectionEx(url);
+            System.out.println("COnnected To QC:"+ itd.connected());
+
+            itd.connectProjectEx(domain,project,username,password);
+
+            System.out.println("Logged into QC");
+
+            //System.out.println("Project_Connected:"+ itd.connected());
+
+
+            ITestSetFactory objTestSetFactory = (itd.testSetFactory()).queryInterface(ITestSetFactory.class);
+            ITestSetTreeManager objTestSetTreeManager = (itd.testSetTreeManager()).queryInterface(ITestSetTreeManager.class);
+
+           ITestSetFolder objTestSetFolder =(objTestSetTreeManager.nodeByPath(strTestLabPath)).queryInterface(ITestSetFolder.class);
+
+           IList its1 = objTestSetFolder.findTestSets(strTestSetName, true, null);
+          //IList ls= objTestSetFolder.findTestSets(strTestSetName, true, null);
+          System.out.println("No. of Test Set:" + its1.count());
+          ITestSet tst= (ITestSet) objTestSetFolder.findTestSets(strTestSetName, true, null).queryInterface(ITSTest.class);
+          System.out.println(tst.name());
+          //System.out.println( its1.queryInterface(ITestSet.class).name());
+
+          /* foreach (ITestSet testSet : its1.queryInterface(ITestSet.class)){  
+           ITestSetFolder tsFolder = (ITestSetFolder)testSet.TestSetFolder;    
+           ITSTestFactory tsTestFactory = (ITSTestFactory)testSet.TSTestFactory;   
+           List tsTestList = tsTestFactory.NewList("");
+           }*/
+
+
+
+
+
+          /* Com4jObject comObj = (Com4jObject) its1.item(0);
+           ITestSet tst = comObj.queryInterface(ITestSet.class); 
+           System.out.println("Test Set Name : " + tst.name());
+           System.out.println("Test Set ID : " + tst.id());
+           System.out.println("Test Set ID : " + tst.status());
+           System.out.println("Test Set ID : " );*/
+
+
+                System.out.println(its1.count());
+           System.out.println("TestSet Present");
+
+           Iterator itr = its1.iterator();
+           System.out.println(itr.hasNext());
+           while (itr.hasNext())
+           {
+               Com4jObject  comObj = (Com4jObject) itr.next();
+           ITestSet sTestSet = comObj.queryInterface(ITestSet.class);
+           System.out.println(sTestSet.name());
+           Com4jObject comObj2 = sTestSet.tsTestFactory();
+           ITestSetFactory test = comObj2.queryInterface(ITestSetFactory.class);
+           }
+
+          // ITSTest tsTest=null;
+          // tsTest.
+           //its1.
+          /* comObj = (Com4jObject) its1.item(1);
+           ITSTest tst2=comObj.queryInterface(ITSTest.class);*/
+        //  System.out.println( tst2.name());
+       /*    foreach (ITSTest tsTest : tst2)
+        {
+         IRun lastRun = (IRun)tsTest.lastRun();
+         if (lastRun == null)
+         {
+            IRunFactory runFactory = (IRunFactory)tsTest.runFactory;
+                        String date = "20160203";
+                   IRun run = (IRun)runFactory.addItem( date);
+                   run.status("Pass");
+                   run.autoPost();
+         }
+
+        }*/
+                }
+        catch(Exception e){
+
+            e.printStackTrace();
+        }
+    }
+
+}

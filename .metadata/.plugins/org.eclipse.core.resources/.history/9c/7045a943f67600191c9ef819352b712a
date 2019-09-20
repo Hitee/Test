@@ -1,0 +1,31 @@
+package rbc1;
+
+/*public class CrunchifyFetchURLData {
+
+}*/
+
+
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.URL;
+
+/**
+* @author Crunchify.com
+*/
+
+public class CrunchifyFetchURLData {
+
+	public static void main(String[] args) {
+		try {
+			URL url = new URL("https://crunchify.com/wp-content/uploads/code/json.sample.txt");
+			BufferedReader br = new BufferedReader(new InputStreamReader(url.openStream()));
+			String strTemp = "";
+			while (null != (strTemp = br.readLine())) {
+				System.out.println(strTemp);
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+	}
+}

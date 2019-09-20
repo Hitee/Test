@@ -1,0 +1,12 @@
+package com.cg;
+
+public class A {
+	 public static void main(String[] args) {
+		 StringBuffer k;
+		 //k="drt"
+		 k.append("wewEWe");
+	      k.concat("crowded ");
+	      k += "city";
+	      System.out.println(k);
+}
+}

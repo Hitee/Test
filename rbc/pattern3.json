@@ -1,0 +1,49 @@
+[  
+    
+    {  
+        "name":"Mark",
+ 	
+        "city":"Oslo",
+         "cars": [
+        {
+            "id": "4",
+            "email": "eve.holt@reqres.in",
+            
+        },
+        {
+            "id": "5",
+            "email": "charles.morris@reqres.in",
+           
+        },
+        {
+            "id": "6",
+            "email": "tracey.ramos@reqres.in",
+          
+        }
+   	 ],
+        "job":"Doctor"
+    },
+{  
+        "name":"Mark2",
+ 	
+        "city":"Oslo2",
+         "cars": [
+        {
+            "id": "42",
+            "email": "eve.holt@reqres.in2",
+            
+        },
+        {
+            "id": "52",
+            "email": "charles.morris@reqres.in2",
+           
+        },
+        {
+            "id": "62",
+            "email": "tracey.ramos@reqres.in2",
+          
+        }
+   	 ],
+        "job":"Doctor2 "
+    }
+]

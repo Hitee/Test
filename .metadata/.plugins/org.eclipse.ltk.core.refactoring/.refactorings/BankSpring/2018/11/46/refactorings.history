@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.cg.spring.dao.IBankDao&apos; to &apos;IBankDAO&apos;&#x0D;&#x0A;- Original project: &apos;BankSpring&apos;&#x0D;&#x0A;- Original element: &apos;com.cg.spring.dao.IBankDao&apos;&#x0D;&#x0A;- Renamed element: &apos;com.cg.spring.dao.IBankDAO&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;IBankDao&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.cg.spring.dao{IBankDao.java[IBankDao" matchStrategy="1" name="IBankDAO" qualified="false" references="true" similarDeclarations="false" stamp="1542308114166" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,13 @@
+package com.cg;
+
+public class A {
+	static String str;
+    public static void main(String[] args) {
+     String s;
+     if(str=="abc")
+        s = str+10;
+     System.out.println(str);
+     System.out.print(s);
+    }
+}
+

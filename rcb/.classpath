@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Hitee Sachdeva/Downloads/JARS/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Hitee Sachdeva/Downloads/JARS/spring-beans-3.0.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Hitee Sachdeva/Downloads/JARS/spring-context-3.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Hitee Sachdeva/Downloads/JARS/poi-ooxml-4.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Hitee Sachdeva/Downloads/JARS/java-json.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Hitee Sachdeva/Downloads/JARS/json-simple-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Hitee Sachdeva/Downloads/JARS/poi-3.5-beta5.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

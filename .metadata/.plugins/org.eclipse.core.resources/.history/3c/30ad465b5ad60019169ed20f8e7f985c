@@ -1,0 +1,32 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+//import EmpoyeeBean.EmployeePageBean;
+//import EmpoyeeBean.EmployeePageBean;
+//import EmpoyeeBean.EmployeePageBean;
+public class webDriver {
+	
+	WebDriver driver = new ChromeDriver();
+	//driver = new ChromeDriver();
+	 public static void main(String[] args) throws InterruptedException {
+		 WebDriver driver = new ChromeDriver();
+		 System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
+		 driver.get("http://google.com");
+		 //String textbox = "//*[@id="tsf"]/div[2]/div[1]/div[1]/div/div[2]/input";
+		 
+		WebElement flag = driver.findElement(By.className("a4bIc"));
+System.out.println(flag.toString());
+		Actions actions = new Actions(driver);
+		///..WebElement elementLocator = driver.findElement(By.id("ID"));
+		//actions.doubleClick().perform();
+		actions.contextClick(flag).perform();
+		//flag.sendKeys(arg0);
+		//driver.wait(3000);
+		driver.close();
+		
+		
+		
+	}
+}

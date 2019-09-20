@@ -1,0 +1,13 @@
+import org.openqa.selenium.WebDriver;
+
+//import EmpoyeeBean.EmployeePageBean;
+
+public class webDriver {
+	private WebDriver driver;
+	System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
+	driver = new ChromeDriver();
+	
+	//private EmployeePageBean obj;
+
+
+}

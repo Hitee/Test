@@ -1,0 +1,19 @@
+package rbc1;
+
+import java.util.List;
+
+import org.json.simple.JSONObject;
+
+public class pattern6 {
+	public static void main(String[] args) throws Exception {  
+	    JSONObject jsonObject = (JSONObject) readJsonSimpleDemo("example.json");
+	    Person ben = new Person(
+	                (String) jsonObject.get("name"),
+	                Integer.valueOf(jsonObject.get("age").toString()),
+	                (Boolean) jsonObject.get("isMarried"),
+	                (List<String>) jsonObject.get("hobbies"),
+	                (List<Person>) jsonObject.get("kids"));
+
+	    System.out.println(ben);
+	}
+}

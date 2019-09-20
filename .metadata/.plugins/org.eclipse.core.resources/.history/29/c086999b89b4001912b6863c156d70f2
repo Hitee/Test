@@ -1,0 +1,43 @@
+package com.cg;
+
+import com4j.*; 
+
+import alm.ota.*;
+
+ 
+
+public class test1 {  
+
+public static void main(String[] args) {
+
+//QC url
+
+String url = "http://your alm server/qcbin";
+
+//username for login
+
+String username = "username";
+
+//password for login
+
+String password = "password";
+
+//domain
+
+String domain = "domian name";
+
+//project
+
+String project = "project name";
+
+ITDConnection itdc = ClassFactory.createTDConnection();
+
+itdc.initConnectionEx(url);
+
+itdc.connectProjectEx(domain, project, username, password);
+
+}
+
+}
+
+ 

@@ -1,0 +1,75 @@
+package rbc1;
+
+/*public class CrunchifyFetchURLData {
+
+}*/
+
+
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.URL;
+
+/**
+* @author Crunchify.com
+*/
+
+public class CrunchifyFetchURLData {
+
+	public static void main(String[] args) {
+		try {
+			URL url = new URL("https://crunchify.com/wp-content/uploads/code/json.sample.txt");
+			BufferedReader br = new BufferedReader(new InputStreamReader(url.openStream()));
+			String strTemp = "";
+			while (null != (strTemp = br.readLine())) {
+				System.out.println(strTemp);
+				
+				
+				
+				  /*OutputStream os = null;
+			        try {
+			            os = new FileOutputStream(new File("C:/Users/Hitee Sachdeva/Desktop/hello.txt"));
+			            //os.wri
+			            os.write(strTemp.getBytes(), 0, strTemp.length());
+			        } catch (IOException e) {
+			            e.printStackTrace();
+			        }finally{
+			            try {
+			                os.close();
+			            } catch (IOException e) {
+			                e.printStackTrace();
+			            }
+			        }*/
+				
+				/* File file = new File("C:/Users/Hitee Sachdeva/Desktop/hell.txt");
+			        FileWriter fr = null;*/
+			        try {
+			            fr = new FileWriter(file);
+			            fr.write(strTemp);
+			        } catch (IOException e) {
+			            e.printStackTrace();
+			        }finally{
+			            //close resources
+			            try {
+			                fr.close();
+			            } catch (IOException e) {
+			                e.printStackTrace();
+			            }
+			        }
+				
+				
+				
+				
+				
+				
+				
+				
+			}
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+	}
+}

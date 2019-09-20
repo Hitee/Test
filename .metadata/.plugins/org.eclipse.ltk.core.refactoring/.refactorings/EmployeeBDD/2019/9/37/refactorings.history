@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;RCB_xpath/src/(default package)&apos;&#x0D;&#x0A;- Original project: &apos;EmployeeBDD&apos;&#x0D;&#x0A;- Destination element: &apos;RCB_xpath/src/(default package)&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     employeeRegistration.RunTest.java&#x0D;&#x0A;     employeeRegistration.StepDefEmployeeDetails.java" description="Copy compilation units" destination="=RCB_xpath/src&lt;" element1="/src\/test\/java&lt;employeeRegistration{RunTest.java" element2="/src\/test\/java&lt;employeeRegistration{StepDefEmployeeDetails.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1568396744044" units="2" version="1.0"/>
+</session>
